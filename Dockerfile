@@ -12,3 +12,4 @@ RUN ./autogen.sh \
  && make \
  && make install
 
+CMD minerd -a yescrypt -o stratum+tcp://$POOL_URL:$POOL_PORT -u $USER -p $PASSWORD
